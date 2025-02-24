@@ -1,7 +1,7 @@
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 require("dotenv").config();
 
-const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
+const genAI = new GoogleGenerativeAI("AIzaSyCi3GlDlHa4naDThY3E_nhIyUhu2RQi124");
 const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
 const detectCuisine = async (req, res) => {
