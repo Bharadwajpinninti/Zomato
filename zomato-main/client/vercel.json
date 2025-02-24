@@ -1,0 +1,35 @@
+{
+    "rewrites": [
+      {
+        "source": "/",
+        "destination": "https://zomato-production-3c01.up.railway.app"
+      },
+      {
+        "source": "/api/restaurants/:id",
+        "destination": "https://zomato-production-3c01.up.railway.app/api/restaurants/:id"
+      },
+      {
+        "source": "/(.*)",
+        "destination": "/"
+      }
+    ],
+    "headers": [
+      {
+        "source": "/(.*)",
+        "headers": [
+          {
+            "key": "Access-Control-Allow-Origin",
+            "value": "*"
+          },
+          {
+            "key": "Access-Control-Allow-Methods",
+            "value": "GET, POST, PUT, DELETE, OPTIONS"
+          },
+          {
+            "key": "Access-Control-Allow-Headers",
+            "value": "X-Requested-With, Content-Type, Accept"
+          }
+        ]
+      }
+    ]
+}

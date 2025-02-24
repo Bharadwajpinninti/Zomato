@@ -1,0 +1,152 @@
+/* 🌌 Modern Restaurant Theme */
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* 🔄 Loading Animation */
+.loading-text {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #00d4ff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  animation: flicker 2s infinite alternate;
+}
+
+@keyframes flicker {
+  0% { opacity: 0.8; }
+  100% { opacity: 1; }
+}
+
+/* 🏙️ Restaurant Banner */
+.restaurant-banner {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.restaurant-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(70%);
+  transition: filter 0.3s ease;
+}
+
+.restaurant-banner:hover .restaurant-image {
+  filter: brightness(85%);
+}
+
+/* 🌟 Overlay */
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+}
+
+.restaurant-name {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 0px 0px 8px rgba(0, 212, 255, 0.5);
+  padding: 10px 20px;
+  border-radius: 12px;
+}
+
+/* 📜 Content Section */
+.restaurant-content {
+  display: flex;
+  justify-content: center;
+  padding: 30px 20px;
+}
+
+/* 🔷 Info Card */
+.restaurant-info {
+  width: 90%;
+  max-width: 850px;
+  background: rgba(0, 212, 255, 0.1);
+  border: 1px solid rgba(0, 212, 255, 0.2);
+  backdrop-filter: blur(10px);
+  padding: 35px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0px 8px 25px rgba(0, 212, 255, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.restaurant-info:hover {
+  transform: translateY(-5px);
+}
+
+.restaurant-info p {
+  font-size: 1.2rem;
+  margin: 12px 0;
+  color: #ffffff;
+}
+
+/* ⭐ Rating Badge */
+.rating-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.rating-badge {
+  background: linear-gradient(145deg, #00d4ff, #006aff);
+  color: white;
+  padding: 12px 20px;
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  box-shadow: 0px 4px 12px rgba(0, 212, 255, 0.3);
+}
+
+/* 🍽 Menu Button */
+.menu-button {
+  display: inline-block;
+  padding: 14px 24px;
+  background: linear-gradient(145deg, #00d4ff, #006aff);
+  color: white;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+  margin-top: 20px;
+}
+
+.menu-button:hover {
+  transform: scale(1.05);
+}
+
+/* 🔙 Back Button */
+.back-button {
+  margin-top: 20px;
+  padding: 14px 24px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  background: transparent;
+  color: #00d4ff;
+  border: 1px solid #00d4ff;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.back-button:hover {
+  background: rgba(0, 212, 255, 0.1);
+}
