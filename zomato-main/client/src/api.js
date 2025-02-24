@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_BASE_URL = "https://zomato-1-eq62.onrender.com/api"; // ✅ API base URL
+const API_BASE_URL = "https://zomato-qt41.onrender.com/api"; // ✅ API base URL
 
 // Fetch all restaurants
 export const fetchRestaurants = async () => {
